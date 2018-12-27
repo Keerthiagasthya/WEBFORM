@@ -1,0 +1,95 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student.aspx.cs" Inherits="withadonet.Student" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <asp:Label ID="lblstudent" runat="server" Text="Student_code: "></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtcode" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="studentname" runat="server" Text="Student_name: "></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtname" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lbldepartcode" runat="server" Text="Student_department: "></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtdepartment" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lbldob" runat="server" Text="Student_dob: "></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtdob" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lbladdress" runat="server" Text="Student_address: "></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtaddress" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="btnserachsubmit" Text="Serach" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="btnupdate" Text="Update" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="btndelete" Text="Delete" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="btnclr" Text="Clear" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnnoofstudents" Text="Numberofstudents" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center" >
+                        <asp:Label ID="lblstudentinfo" Text="StudentInformation" runat="server"></asp:Label>
+                    </td>
+                    <td colspan="2" style="text-align:center">
+                        <asp:GridView ID="gvstudent" runat="server"></asp:GridView>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</body>
+</html>
